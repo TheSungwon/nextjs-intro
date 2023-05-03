@@ -1,18 +1,9 @@
-import NavBar from "@/components/NavBar"
+import Layout from "../components/Layout";
 
 export default function All({Component, pageProps}){
-console.log(Component)
-console.log(pageProps)
-    return <>
+    return (
+    <Layout>
         <Component {...pageProps}/>
-        <NavBar />
-        <style jsx global>
-            {`
-                .active{
-                    color:red;
-                }
-            `}
-        </style>
-        <span>_app.js test</span>
-    </>
+    </Layout>
+    );
 }

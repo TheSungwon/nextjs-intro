@@ -1,11 +1,12 @@
-import NavBar from "@/components/NavBar";
+import Seo from "../components/Seo";
 
 export default function a(){
   return (
     <div>
-      {/* <NavBar/> */}
+      <Seo title="home"></Seo>
       <h1>hello world</h1>
     </div>
 
   )
 }
+
