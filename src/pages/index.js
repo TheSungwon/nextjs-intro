@@ -3,7 +3,7 @@ import Seo from "../components/Seo";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function a({data}) {
+export default function Home({data}) {
 
 
   // const [movie, setMoives] = useState([]);

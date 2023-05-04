@@ -14,7 +14,7 @@ export default function Detail(params){
         <h1>{title}</h1>
         <img src={`https://image.tmdb.org/t/p/w500/`+params.movieInfo.poster_path} alt=""/>
         <ul>
-        {params.movieInfo.genres.map((e, i)=>(
+        {params.movieInfo.genres?.map((e, i)=>(
             <li key={i}>
                 {e.name}
             </li>
@@ -22,7 +22,7 @@ export default function Detail(params){
         </ul>
         <hr/>
         <ul>
-        {params.movieInfo.production_companies.map((e, i)=>(
+        {params.movieInfo.production_companies?.map((e, i)=>(
             <li key={i}>
             <img src={`https://image.tmdb.org/t/p/w500/`+e.logo_path} alt=""/>
             </li>
